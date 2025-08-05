@@ -1,0 +1,105 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif; /* Modern sans-serif font */
+    background-color: #f4f4f4; /* Light grey background */
+    color: #333; /* Dark text for readability */
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #001f3f; /* Navy blue */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+    max-width: 800px; /* Centered content */
+    margin: 20px auto;
+    background: white; /* White background for content */
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Form Styles */
+label {
+    display: block;
+    margin: 10px 0 5px; /* Spacing for labels */
+}
+
+input[type="number"], select {
+    width: 100%; /* Full width inputs */
+    padding: 10px;
+    margin-bottom: 15px; /* Spacing below inputs */
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 4px; /* Rounded corners */
+}
+
+button {
+    background-color: #001f3f; /* Navy blue */
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 16px; /* Larger font for buttons */
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker navy on hover */
+}
+
+/* Result Field Styles */
+#result, #forecastResult, #netWithdrawalResult, #estimatedFundResult, #retirementSavingsResult {
+    font-size: 1.2em; /* Slightly smaller font size */
+    margin: 20px 0; /* Spacing for results */
+    padding: 15px; /* Padding for results */
+    border: 1px solid #001f3f; /* Navy blue border */
+    border-radius: 4px; /* Rounded corners */
+    background-color: #e9f7fe; /* Light blue background */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #001f3f; /* Navy blue */
+    color: white;
+    margin-top: 40px; /* Space above footer */
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    main {
+        padding: 15px; /* Reduce padding on smaller screens */
+    }
+    button {
+        width: 100%; /* Full width buttons on mobile */
+        padding: 12px; /* Adjust padding for buttons */
+    }
+    input[type="number"], select {
+        padding: 12px; /* Adjust padding for inputs */
+    }
+    #result, #forecastResult, #netWithdrawalResult, #estimatedFundResult, #retirementSavingsResult {
+        font-size: 1em; /* Smaller font size for results */
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5em; /* Adjust header size for mobile */
+    }
+    main {
+        margin: 10px; /* Reduce margin on mobile */
+    }
+    button {
+        font-size: 14px; /* Smaller button text */
+    }
+}
